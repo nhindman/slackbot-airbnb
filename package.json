@@ -5,6 +5,7 @@
   "main": "bot.js",
   "dependencies": {
     "body-parser": "^1.14.2",
+    "botkit": "0.0.5",
     "debug": "2.2.0",
     "eventemitter2": "0.4.14",
     "express": "^4.13.3",
@@ -21,5 +22,8 @@
     "tap-spec": "^4.1.1",
     "tape": "^4.4.0",
     "winston": "^2.1.1"
+  },
+  "scripts": {
+    "start": "node bot.js"
   }
 }
