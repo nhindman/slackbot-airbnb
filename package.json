@@ -1,0 +1,25 @@
+{
+  "name": "airbnb-bot",
+  "version": "0.0.5",
+  "description": "airbnb bot",
+  "main": "bot.js",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "debug": "2.2.0",
+    "eventemitter2": "0.4.14",
+    "express": "^4.13.3",
+    "jfs": "^0.2.6",
+    "mustache": "^2.2.1",
+    "request": "^2.69.0",
+    "ws": "^1.0.0",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "jscs": "^2.7.0",
+    "node-env-file": "^0.1.8",
+    "should": "^8.0.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.4.0",
+    "winston": "^2.1.1"
+  }
+}
