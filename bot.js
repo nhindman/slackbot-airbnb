@@ -4,6 +4,9 @@ var Botkit = require('botkit');
 var clientId = process.env.client_id;
 var clientSecret = process.env.client_secret;
 var port = process.env.PORT || "1337";
+var redisUrl = process.env.REDISTOGO_URL || null;
+var redisConfig = { url: redisUrl };
+var redisStorage = redisStorage = require('botkit-storage-redis')(redisConfig);
 
 if (!clientId || !clientSecret || !port) {
   console.log('Error: Specify clientId clientSecret and port in environment');
@@ -12,7 +15,7 @@ if (!clientId || !clientSecret || !port) {
 
 
 var controller = Botkit.slackbot({
-  json_file_store: './db_slackbutton_bot/',
+  storage: redisStorage
 }).configureSlackApp(
   {
     clientId: clientId,
