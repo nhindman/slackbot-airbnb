@@ -3,7 +3,7 @@ var Botkit = require('botkit');
 
 var clientId = process.env.client_id;
 var clientSecret = process.env.client_secret;
-var port = process.env.port || "1337";
+var port = process.env.PORT || "1337";
 
 if (!clientId || !clientSecret || !port) {
   console.log('Error: Specify clientId clientSecret and port in environment');
